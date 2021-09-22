@@ -1,0 +1,191 @@
+//program
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace ConsoleApp19
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            //Create the random number generator
+            Random rn = new Random();
+            
+           
+
+                //create the grade variables
+                    int answer1 = rn.Next(60, 101);
+                    int answer2 = rn.Next(60, 101);
+                    int answer3 = rn.Next(60, 101);
+                    int answer4 = rn.Next(60, 101);
+                    int answer5 = rn.Next(60, 101);
+                    int answer6 = rn.Next(60, 101);
+                    int answer7 = rn.Next(60, 101);
+                    int answer8 = rn.Next(60, 101);
+                    int answer9 = rn.Next(60, 101);
+                    int answer10 = rn.Next(60, 101);
+                    int answera = rn.Next(60, 101);
+                    int answerb = rn.Next(60, 101);
+                    int answerc = rn.Next(60, 101);
+                    int answerd = rn.Next(60, 101);
+                    int answere = rn.Next(60, 101);
+                    int answerf = rn.Next(60, 101);
+                    int answerg = rn.Next(60, 101);
+                    int answerh = rn.Next(60, 101);
+                    int answeri = rn.Next(60, 101);
+                    int answerj = rn.Next(60, 101);
+                    int answerk = rn.Next(60, 101);
+            //set what it will look like
+                        string choice1 = "Student 1: " + answerf + " " + answer4 + " " + answerh + " " + answer7 + " " + answer5 + " " + answerd + " " + answerj + " " + answer8;
+                    
+                        string choice2 = "Student 2: " + answeri + " " + answer2 + " " + answerg + " " + answer5 + " " + answerb + " " + answerf;
+                    
+                        string choice3 = "Student 3: " + answere + " " + answer1 + " " + answer7 + " " + answerc + " " + answer2 + " " + answer9 + " " + answerk + " " + answer5;
+
+                        string choice4 = "Student 4: " + answerh + " " + answer10 + " " + answera + " " + answere;
+                    
+                        string choice5 = "Student 5: " + answer8 + " " + answerk + " " + answer3 + " " + answerc + " " + answer10 + " " + answerb + " " + answer5 + " " + answerd;
+                  
+                        string choice6 = "Student 6: " + answeri + " " + answer2 + " " + answer3 + " " + answerj + " " + answera + " " + answer4 + " " + answerk + " " + answerh;
+                    
+                        string choice7 = "Student 7: " + answerb + " " + answer6 + " " + answer4 + " " + answerj + " " + answer4 + " " + answerf;
+                   
+                        string choice8 = "Student 8: " + answer9 + " " + answerg + " " + answer3 + " " + answerc + " " + answerk + " " + answer8 + " " + answeri;
+                   
+                        string choice9 = "Student 9: " + answer10 + " " + answere;
+                    
+                        string choice10 = "Student 10: " + answer2 + " " + answer7 + " " + answera + " " + answeri + " " + answerd;
+
+            //Create a new list
+            List<List<string>> Elformonixuno = new List<List<string>>() { };
+            List<string> ElFormonixparteuno = new List<string>() {choice1, choice2, choice3, choice4, choice5, choice6, choice7, choice8, choice9, choice10 };
+            Elformonixuno.Add(ElFormonixparteuno);
+            //Add the for loop
+            for (int i = 1; i <= 10; i = i + 1)
+            {
+                
+            }
+            foreach (string item in ElFormonixparteuno)
+            {
+
+            }
+            //Create the total numbers
+            int totalone = (answerf + answer4 + answerh + answer7 + answer5 + answerd + answerj + answer8) / 8;
+            int totaltwo = (answeri + answer2 +  answerg + answer5 + answerb + answerf) / 6;
+            int totalthree = (answere + answer1 + answer7 + answerc + answer2 + answer9 + answerk + answer5) / 8;
+            int totalfour = (answerh + answer10 + answera + answere) / 4;
+            int totalfive = (answer8 +  answerk + answer3 + answerc + answer10 + answerb + answer5 + answerd) / 8;
+            int totalsix = (answeri + answer2 + answer3 + answerj + answera + answer4 + answerk + answerh) / 8;
+            int totalseven = (answerb + answer6 + answer4 + answerj + answer4 + answerf) / 6;
+            int totaleight = (answer9 + answerg + answer3 + answerc + answerk + answer8 + answeri) / 7;
+            int totalnine = (answer10 + answere) / 2;
+            int totalten = (answer2 + answer7 + answera + answeri + answerd) / 5;
+
+            //Create the 2d list
+            List<List<int>> ElFormonixdos = new List<List<int>>(){};
+            List<int> averagespart1 = new List<int>() { totalone, totaltwo, totalthree, totalfour};
+            List<int> averagespart2 = new List<int>() { totalfive, totalsix, totalseven, totaleight, totalnine, totalten };
+            ElFormonixdos.Add(averagespart1);
+            ElFormonixdos.Add(averagespart2);
+
+            //output the answers
+            Console.WriteLine(Elformonixuno[0][0]);
+            Console.WriteLine("Average Score = " + " " + ElFormonixdos[0][0]);
+            Console.WriteLine();
+
+            Console.WriteLine(Elformonixuno[0][1]);
+            Console.WriteLine("Average Score = " + " " + ElFormonixdos[0][1]);
+            Console.WriteLine();
+
+            Console.WriteLine(Elformonixuno[0][2]);
+            Console.WriteLine("Average Score = " + " " + ElFormonixdos[0][2]);
+            Console.WriteLine();
+
+            Console.WriteLine(Elformonixuno[0][3]);
+            Console.WriteLine("Average Score = " + " " + ElFormonixdos[0][3]);
+            Console.WriteLine();
+
+            Console.WriteLine(Elformonixuno[0][4]);
+            Console.WriteLine("Average Score = " + " " + ElFormonixdos[1][0]);
+            Console.WriteLine();
+
+            Console.WriteLine(Elformonixuno[0][5]);
+            Console.WriteLine("Average Score = " + " " + ElFormonixdos[1][1]);
+            Console.WriteLine();
+
+            Console.WriteLine(Elformonixuno[0][6]);
+            Console.WriteLine("Average Score = " + " " + ElFormonixdos[1][2]);
+            Console.WriteLine();
+
+            Console.WriteLine(Elformonixuno[0][7]);
+            Console.WriteLine("Average Score = " + " " + ElFormonixdos[1][3]);
+            Console.WriteLine();
+
+            Console.WriteLine(Elformonixuno[0][8]);
+            Console.WriteLine("Average Score = " + " " + ElFormonixdos[1][4]);
+            Console.WriteLine();
+
+            Console.WriteLine(Elformonixuno[0][9]);
+            Console.WriteLine("Average Score = " + " " + ElFormonixdos[1][5]);
+            Console.WriteLine();
+            Console.ReadLine();
+
+            if (ElFormonixdos[0][0] > ElFormonixdos[0][1] && ElFormonixdos[0][0] > ElFormonixdos[0][2] && ElFormonixdos[0][0] > ElFormonixdos[0][3] && ElFormonixdos[0][0] > ElFormonixdos[1][0] && ElFormonixdos[0][0] > ElFormonixdos[1][1] && ElFormonixdos[0][0] > ElFormonixdos[1][2] && ElFormonixdos[0][0] > ElFormonixdos[1][3] && ElFormonixdos[0][0] > ElFormonixdos[1][4] && ElFormonixdos[0][0] > ElFormonixdos[1][5])
+            {
+                Console.WriteLine("The student with the highest score is: Student 1.");
+                Console.ReadLine();
+            }
+            else if (ElFormonixdos[0][1] > ElFormonixdos[0][0] && ElFormonixdos[0][1] > ElFormonixdos[0][2] && ElFormonixdos[0][1] > ElFormonixdos[0][3] && ElFormonixdos[0][1] > ElFormonixdos[1][0] && ElFormonixdos[0][1] > ElFormonixdos[1][1] && ElFormonixdos[0][1] > ElFormonixdos[1][2] && ElFormonixdos[0][1] > ElFormonixdos[1][3] && ElFormonixdos[0][1] > ElFormonixdos[1][4] && ElFormonixdos[0][1] > ElFormonixdos[1][5])
+            {
+                Console.WriteLine("The student with the highest score is: Student 2.");
+                Console.ReadLine();
+            }
+            else if (ElFormonixdos[0][2] > ElFormonixdos[0][0] && ElFormonixdos[0][2] > ElFormonixdos[0][1] && ElFormonixdos[0][2] > ElFormonixdos[0][3] && ElFormonixdos[0][2] > ElFormonixdos[1][0] && ElFormonixdos[0][2] > ElFormonixdos[1][1] && ElFormonixdos[0][2] > ElFormonixdos[1][2] && ElFormonixdos[0][2] > ElFormonixdos[1][3] && ElFormonixdos[0][2] > ElFormonixdos[1][4] && ElFormonixdos[0][2] > ElFormonixdos[1][5])
+            {
+                Console.WriteLine("The student with the highest score is: Student 3.");
+                Console.ReadLine();
+            }
+            else if (ElFormonixdos[0][3] > ElFormonixdos[0][0] && ElFormonixdos[0][3] > ElFormonixdos[0][2] && ElFormonixdos[0][3] > ElFormonixdos[1][0] && ElFormonixdos[0][3] > ElFormonixdos[1][1] && ElFormonixdos[0][3] > ElFormonixdos[1][2] && ElFormonixdos[0][3] > ElFormonixdos[1][3] && ElFormonixdos[0][3] > ElFormonixdos[1][4] && ElFormonixdos[0][3] > ElFormonixdos[1][5])
+            {
+                Console.WriteLine("The student with the highest score is: Student 4.");
+                Console.ReadLine();
+            }
+            else if (ElFormonixdos[1][0] > ElFormonixdos[0][0] || ElFormonixdos[1][0] > ElFormonixdos[0][2] && ElFormonixdos[1][0] > ElFormonixdos[0][3] && ElFormonixdos[1][0] > ElFormonixdos[1][1] && ElFormonixdos[1][0] > ElFormonixdos[1][2] && ElFormonixdos[1][0] > ElFormonixdos[1][3] && ElFormonixdos[1][0] > ElFormonixdos[1][4] && ElFormonixdos[1][0] > ElFormonixdos[1][5])
+            {
+                Console.WriteLine("The student with the highest score is: Student 5.");
+                Console.ReadLine();
+            }
+            else if (ElFormonixdos[1][1] > ElFormonixdos[0][0] && ElFormonixdos[1][1] > ElFormonixdos[0][2] && ElFormonixdos[1][1] > ElFormonixdos[0][3] && ElFormonixdos[1][1] > ElFormonixdos[1][0] && ElFormonixdos[1][1] > ElFormonixdos[1][2] && ElFormonixdos[1][1] > ElFormonixdos[1][3] && ElFormonixdos[1][1] > ElFormonixdos[1][4] && ElFormonixdos[1][1] > ElFormonixdos[1][5])
+            {
+                Console.WriteLine("The student with the highest score is: Student 6.");
+                Console.ReadLine();
+            }
+            else if (ElFormonixdos[1][2] > ElFormonixdos[0][0] && ElFormonixdos[1][2] > ElFormonixdos[0][2] && ElFormonixdos[1][2] > ElFormonixdos[0][3] && ElFormonixdos[1][2] > ElFormonixdos[1][0] && ElFormonixdos[1][2] > ElFormonixdos[1][1] && ElFormonixdos[1][2] > ElFormonixdos[1][3] && ElFormonixdos[1][2] > ElFormonixdos[1][4] && ElFormonixdos[1][2] > ElFormonixdos[1][5])
+            {
+                Console.WriteLine("The student with the highest score is: Student 7.");
+                Console.ReadLine();
+            }
+            else if (ElFormonixdos[1][3] > ElFormonixdos[0][0] && ElFormonixdos[1][3] > ElFormonixdos[0][2] && ElFormonixdos[1][3] > ElFormonixdos[0][3] && ElFormonixdos[1][3] > ElFormonixdos[1][0] && ElFormonixdos[1][3] > ElFormonixdos[1][1] && ElFormonixdos[1][3] > ElFormonixdos[1][2] && ElFormonixdos[1][3] > ElFormonixdos[1][4] && ElFormonixdos[1][3] > ElFormonixdos[1][5])
+            {
+                Console.WriteLine("The student with the highest score is: Student 8.");
+                Console.ReadLine();
+            }
+            else if (ElFormonixdos[1][4] > ElFormonixdos[0][0] && ElFormonixdos[1][4] > ElFormonixdos[0][2] && ElFormonixdos[1][4] > ElFormonixdos[0][3] && ElFormonixdos[1][4] > ElFormonixdos[1][0] && ElFormonixdos[1][4] > ElFormonixdos[1][1] && ElFormonixdos[1][4] > ElFormonixdos[1][2] && ElFormonixdos[1][4] > ElFormonixdos[1][3] && ElFormonixdos[1][4] > ElFormonixdos[1][5])
+            {
+                Console.WriteLine("The student with the highest score is: Student 9.");
+                Console.ReadLine();
+            }
+            else if (ElFormonixdos[1][5] > ElFormonixdos[0][0] && ElFormonixdos[1][5] > ElFormonixdos[0][2] && ElFormonixdos[1][5] > ElFormonixdos[0][3] && ElFormonixdos[1][5] > ElFormonixdos[1][0] && ElFormonixdos[1][5] > ElFormonixdos[1][1] && ElFormonixdos[1][5] > ElFormonixdos[1][2] && ElFormonixdos[1][5] > ElFormonixdos[1][3] && ElFormonixdos[1][5] > ElFormonixdos[1][4])
+            {
+                Console.WriteLine("The student with the highest score is: Student 10.");
+                Console.ReadLine();
+            }
+        }
+
+
+        
+    }
+    }
