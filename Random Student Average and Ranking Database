@@ -38,7 +38,7 @@ namespace ConsoleApp19
                     int answeri = rn.Next(60, 101);
                     int answerj = rn.Next(60, 101);
                     int answerk = rn.Next(60, 101);
-            //set what it will look like
+            //set what it will output
                         string choice1 = "Student 1: " + answerf + " " + answer4 + " " + answerh + " " + answer7 + " " + answer5 + " " + answerd + " " + answerj + " " + answer8;
                     
                         string choice2 = "Student 2: " + answeri + " " + answer2 + " " + answerg + " " + answer5 + " " + answerb + " " + answerf;
@@ -72,7 +72,7 @@ namespace ConsoleApp19
             {
 
             }
-            //Create the total numbers
+            //Calculate the averages
             int totalone = (answerf + answer4 + answerh + answer7 + answer5 + answerd + answerj + answer8) / 8;
             int totaltwo = (answeri + answer2 +  answerg + answer5 + answerb + answerf) / 6;
             int totalthree = (answere + answer1 + answer7 + answerc + answer2 + answer9 + answerk + answer5) / 8;
@@ -91,7 +91,7 @@ namespace ConsoleApp19
             ElFormonixdos.Add(averagespart1);
             ElFormonixdos.Add(averagespart2);
 
-            //output the answers
+            //output the averages
             Console.WriteLine(Elformonixuno[0][0]);
             Console.WriteLine("Average Score = " + " " + ElFormonixdos[0][0]);
             Console.WriteLine();
@@ -133,6 +133,8 @@ namespace ConsoleApp19
             Console.WriteLine();
             Console.ReadLine();
 
+
+            //output info regarding who has the highest score
             if (ElFormonixdos[0][0] > ElFormonixdos[0][1] && ElFormonixdos[0][0] > ElFormonixdos[0][2] && ElFormonixdos[0][0] > ElFormonixdos[0][3] && ElFormonixdos[0][0] > ElFormonixdos[1][0] && ElFormonixdos[0][0] > ElFormonixdos[1][1] && ElFormonixdos[0][0] > ElFormonixdos[1][2] && ElFormonixdos[0][0] > ElFormonixdos[1][3] && ElFormonixdos[0][0] > ElFormonixdos[1][4] && ElFormonixdos[0][0] > ElFormonixdos[1][5])
             {
                 Console.WriteLine("The student with the highest score is: Student 1.");
